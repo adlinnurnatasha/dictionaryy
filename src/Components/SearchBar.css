@@ -72,3 +72,15 @@ input::placeholder {
   background: #c4c4c4c4;
   border-radius: 10px;
 }
+
+/* Small screens, laptops ----------- */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .searchResults {
+    width: 80%;
+  }
+
+  .startingMsg {
+    font-size: 32px;
+    padding: 9rem 1.5rem;
+  }
+}
