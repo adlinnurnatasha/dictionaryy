@@ -28,6 +28,7 @@ const SearchBar = () => {
     <div className="search-container">
       <div className="searchBar">
         <input
+          className="input"
           type="text"
           value={word}
           onChange={(event) => setWord(event.target.value)}

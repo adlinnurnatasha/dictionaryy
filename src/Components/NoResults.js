@@ -2,8 +2,8 @@ const NoResults = ({ title, message, resolution }) => {
   return (
     <div>
       <p className="title">{title}</p>
-      <p>{message}</p>
-      <p>{resolution}</p>
+      <p className="notFound">{message}</p>
+      <p className="resolution">{resolution}</p>
     </div>
   );
 };

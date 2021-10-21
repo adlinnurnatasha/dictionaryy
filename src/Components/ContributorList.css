@@ -25,3 +25,79 @@
   font-size: 24px;
   font-family: "Red Hat Display", sans-serif;
 }
+
+/*mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .person_list {
+    grid-template-columns: repeat(4, 50px);
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    margin-top: 10px;
+  }
+
+  .person_img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .person_name {
+    font-size: 12px;
+  }
+}
+
+/* iPads and Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .person_list {
+    grid-template-columns: repeat(4, 75px);
+    grid-row-gap: 10px;
+    grid-column-gap: 16px;
+    margin-top: 10px;
+  }
+
+  .person_img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .person_name {
+    font-size: 15px;
+  }
+}
+/* 
+large screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .person_list {
+    grid-template-columns: repeat(4, 100px);
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+    margin-top: 40px;
+  }
+
+  .person_img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .person_name {
+    font-size: 18px;
+  }
+}
+
+/* Dekstops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .person_list {
+    grid-template-columns: repeat(7, 100px);
+    grid-row-gap: 10px;
+    grid-column-gap: 39px;
+    margin-top: 30px;
+  }
+
+  .person_img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .person_name {
+    font-size: 20px;
+  }
+}
