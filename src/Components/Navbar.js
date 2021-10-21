@@ -9,13 +9,13 @@ const Navbar = () => {
     <div className="navbar">
       <Logo />
       <div className="nav-list">
-        <Switch />
         <Link to="/">
           <div className="home-btn">Home</div>
         </Link>
         <Link to="/about">
           <div className="about-btn">About</div>
         </Link>
+        <Switch />
       </div>
     </div>
   );

@@ -1,11 +1,7 @@
 import React from "react";
 import { lightTheme, darkTheme, GlobalStyles } from "./Theme";
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import Toggle from "./Toggle";
-
-const StyledApp = styled.div`
-  color: ${(props) => props.theme.fontColor};
-`;
 
 const Switch = () => {
   const [theme, setTheme] = React.useState("light");
@@ -25,9 +21,7 @@ const Switch = () => {
     //return the layout based on the current theme
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <StyledApp>
-        <Toggle theme={theme} toggleTheme={toggleTheme} />
-      </StyledApp>
+      <Toggle theme={theme} toggleTheme={toggleTheme} />
     </ThemeProvider>
   );
 };

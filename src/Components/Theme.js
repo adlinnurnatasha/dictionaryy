@@ -12,6 +12,7 @@ export const lightTheme = {
 export const darkTheme = {
   body: "#000",
   fontColor: "#fff",
+  banner: "#000",
   title: "#c7d2fe",
   searchBar: "#575757",
   box: "#6366f1",
@@ -23,8 +24,11 @@ export const GlobalStyles = createGlobalStyle`
 body, .banner, .wotd, .searchBar, .input, .partOfSpeech, .synonymsList, .antonymsList{
   transition: background-color 0.5s ease;
 }
-body, .banner{
+body{
     background-color: ${(props) => props.theme.body}
+}
+.banner{
+  background-color: ${(props) => props.theme.banner}
 }
 .main-title, .sub-title{
   color: ${(props) => props.theme.title}
