@@ -19,7 +19,7 @@ const About = () => {
           </p>
           <p>
             Thanks for expanding your ‘wor
-            <span style={{ fontWeight: "bold" }}>l</span>d’ us.
+            <span style={{ fontWeight: "bold" }}>l</span>d’ with us.
           </p>
         </div>
       </div>
