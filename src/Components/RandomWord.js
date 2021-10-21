@@ -22,9 +22,9 @@ const RandomWord = () => {
     <div className="wotd">
       <div className="wotd-title">#WOTD</div>
       <div className="genWord">
-        {randomWord.map((r) => {
+        {randomWord.map((r, idx) => {
           return (
-            <div>
+            <div key={idx}>
               <div className="theWord">"{r.word}"</div>
               <div className="definition">{r.definition}</div>
               {/* <div className="theWord">"{r}"</div> */}
