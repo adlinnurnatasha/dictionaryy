@@ -14,6 +14,18 @@
   font-size: 20px;
 }
 
+/* Small screens, laptops ----------- */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .message {
+    font-size: 18px;
+    text-align: center;
+  }
+  .resolution {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .title {
     font-size: 24px;
@@ -29,7 +41,7 @@
   }
 
   .noResults {
-    margin-top: 60px;
+    margin-top: 90px;
   }
 }
 
@@ -48,6 +60,6 @@
   }
 
   .noResults {
-    margin-top: 60px;
+    margin-top: 90px;
   }
 }

@@ -66,6 +66,19 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .word-definition {
     padding: 0px 0px 5px 5px;
+    font-size: 16px;
+  }
+
+  .word-example {
+    font-size: 14px;
+  }
+
+  .synonymsList {
+    font-size: 11px;
+  }
+
+  .antonymsList {
+    font-size: 11px;
   }
 }
 
