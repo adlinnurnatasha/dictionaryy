@@ -25,3 +25,8 @@
 .about-btn {
   padding-left: 35px;
 }
+
+.home-btn:hover,
+.about-btn:hover {
+  font-weight: bold;
+}
