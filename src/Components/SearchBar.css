@@ -79,6 +79,7 @@ input::placeholder {
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .searchResults {
     width: 80%;
+    height: 400px;
   }
 
   .startingMsg {
@@ -117,6 +118,6 @@ input::placeholder {
   }
   .searchResults {
     width: 90%;
-    height: 385px;
+    height: 358px;
   }
 }
