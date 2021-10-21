@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-//import { FaChevronRight } from "react-icons/fa";
 import "./Definitions.css";
 
+//From ResultCard - to display each object in Definitions
 const Definitions = (props) => {
+  //Show/hide synonym & antonym
   const [showSynonym, setShowSynonym] = useState(false);
   const [showAntonym, setShowAntonym] = useState(false);
 

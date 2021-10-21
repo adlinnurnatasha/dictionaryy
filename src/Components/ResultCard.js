@@ -3,6 +3,7 @@ import PartOfSpeech from "./PartOfSpeech";
 import Definitions from "./Definitions";
 import "./ResultCard.css";
 
+//From searchBar - to display results
 const ResultCard = ({ word, meanings, phonetics }) => {
   const partOfSpeech = meanings.map((m) => m.partOfSpeech);
   const definitions = [];

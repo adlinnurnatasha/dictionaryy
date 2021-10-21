@@ -39,7 +39,7 @@ body{
   background-color: ${(props) => props.theme.wotd}
 
 }
-.words, .word-example, .word-definition, .wotd-title, .theWord, .definition, .title, .notFound, .resolution, .about_us, .contributors, person_name{
+.words, .word-example, .word-definition, .wotd-title, .theWord, .definition, .title, .notFound, .message, .resolution, .about_us, .contributors, person_name{
   color: ${(props) => props.theme.fontColor}
 }
 
