@@ -1,6 +1,7 @@
 //variables for dark and light themes
 import { createGlobalStyle } from "styled-components";
 
+//object that references to the color properties
 export const lightTheme = {
   body: "#fff",
   fontColor: "#000",
@@ -19,7 +20,7 @@ export const darkTheme = {
   wotd: "#000",
 };
 
-//base styling
+//base styling (for entire document)
 export const GlobalStyles = createGlobalStyle`
 body, .banner, .wotd, .searchBar, .input, .partOfSpeech, .synonymsList, .antonymsList{
   transition: background-color 0.5s ease;
@@ -38,7 +39,7 @@ body{
   background-color: ${(props) => props.theme.wotd}
 
 }
-.words, .word-example, .word-definition, .wotd-title, .theWord, .definition, .title, .notFound, .resolution, .about_us, .contributors, person_name{
+.words, .word-example, .word-definition, .wotd-title, .theWord, .definition, .title, .notFound, .message, .resolution, .about_us, .contributors, person_name{
   color: ${(props) => props.theme.fontColor}
 }
 

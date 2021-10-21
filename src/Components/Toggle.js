@@ -1,6 +1,8 @@
 import React from "react";
 import "./ToggleSwitch.scss";
 
+//toggle component
+//onClick it will change the theme
 const Toggle = ({ toggleTheme, theme }) => {
   return (
     <label className="toggle-switch">

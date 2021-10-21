@@ -3,10 +3,9 @@
   display: flex;
 }
 
-
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .words {
-    font-size: 24px;
+    font-size: 26px;
     flex-direction: column;
   }
 }
