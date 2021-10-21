@@ -34,7 +34,6 @@ const SearchBar = () => {
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
       searchHandler();
-      console.log("enter press here");
     }
   };
 
