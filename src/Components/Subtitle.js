@@ -1,5 +1,5 @@
 import "./Subtitle.css";
-import animate from "animate.css";
+import "animate.css";
 
 const Subtitle = () => {
   return (
