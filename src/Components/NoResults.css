@@ -13,3 +13,41 @@
 .resolution {
   font-size: 20px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .message {
+    font-size: 14px;
+    text-align: center;
+  }
+  .resolution {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .noResults {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .message {
+    font-size: 16px;
+    text-align: center;
+  }
+  .resolution {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .noResults {
+    margin-top: 60px;
+  }
+}
