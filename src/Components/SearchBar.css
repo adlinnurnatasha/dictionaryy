@@ -43,6 +43,7 @@ input::placeholder {
 
 .FaSearch {
   color: white;
+  cursor: pointer;
 }
 
 .startingMsg {

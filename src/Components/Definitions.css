@@ -26,6 +26,7 @@
 .antonymsList:hover {
   background-color: #eef2ff;
   color: black;
+  cursor: pointer;
 }
 
 .word-definition {
