@@ -18,6 +18,11 @@
   width: 100px;
   height: 100px;
   grid-area: "image";
+  transition: transform 0.2s;
+}
+
+.person_img:hover {
+  transform: scale(1.2);
 }
 
 .person_name {
