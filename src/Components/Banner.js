@@ -4,9 +4,9 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <div className="banner dark:bg-black">
       <Subtitle />
-      <div className="randomWord">
+      <div className="randomWord animate__animated animate__fadeInRight">
         <RandomWord />
       </div>
     </div>
