@@ -38,6 +38,18 @@
     font-size: 20px;
     padding: 0 20px;
   }
+
+  .home-btn {
+    padding: 0 25px 0 10px;
+  }
+
+  .about-btn {
+    padding: 0 25px;
+  }
+  .logo {
+    width: 100px;
+    height: 68px;
+  }
 }
 
 /* iPads, Tablets ---------- */

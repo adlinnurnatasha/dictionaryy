@@ -16,11 +16,13 @@ const SearchBar = () => {
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
       .then((results) => results.json())
       .then((data) => {
+        //for if no result found
         if (data.title === "No Definitions Found") {
           setError(data);
         } else {
           // Clear if no error
           setError(null);
+          //for if result found
           setSearchResult(data);
         }
       });
@@ -32,7 +34,6 @@ const SearchBar = () => {
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
       searchHandler();
-      console.log("enter press here");
     }
   };
 
@@ -46,6 +47,7 @@ const SearchBar = () => {
           onChange={(event) => setWord(event.target.value)}
           onKeyPress={(e) => handleKeyPress(e)}
           placeholder="Search a word!"
+          required
         />
         <button onClick={searchHandler}>
           <FaSearch className="FaSearch" />
