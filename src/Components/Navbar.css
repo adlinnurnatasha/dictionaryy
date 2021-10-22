@@ -46,6 +46,10 @@
   .about-btn {
     padding: 0 25px;
   }
+  .logo {
+    width: 100px;
+    height: 68px;
+  }
 }
 
 /* iPads, Tablets ---------- */

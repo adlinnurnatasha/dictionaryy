@@ -20,7 +20,7 @@ const RandomWord = () => {
 
   return (
     <div className="wotd">
-      <div className="wotd-title">#WOTD</div>
+      <div className="wotd-title">#RW4U</div>
       <div className="genWord">
         {randomWord.map((r, idx) => {
           return (
