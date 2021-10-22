@@ -7,7 +7,9 @@ import Switch from "./Switch";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <Logo className="logo" />
+      <Link to="/">
+        <Logo className="logo" />
+      </Link>
       <div className="nav-list">
         <Link to="/">
           <div className="home-btn">Home</div>
