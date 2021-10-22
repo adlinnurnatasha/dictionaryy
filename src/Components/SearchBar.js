@@ -47,6 +47,7 @@ const SearchBar = () => {
           onChange={(event) => setWord(event.target.value)}
           onKeyPress={(e) => handleKeyPress(e)}
           placeholder="Search a word!"
+          required
         />
         <button onClick={searchHandler}>
           <FaSearch className="FaSearch" />
