@@ -21,6 +21,10 @@ body {
   align-items: center;
 }
 
+.contributors {
+  margin-bottom: 96px;
+}
+
 .about_us {
   padding-top: 24px;
 }
