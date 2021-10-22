@@ -6,17 +6,22 @@ import Toggle from "./Toggle";
 const Switch = () => {
   const [theme, setTheme] = React.useState("light");
 
-  // The function that toggles between themes
-  // To track which state it is currently on
-  const toggleTheme = () => {
-    // if the theme is not light, then set it to dark
-    if (theme === "light") {
-      setTheme("dark");
-      // otherwise, it should be light
-    } else {
-      setTheme("light");
-    }
+  const setMode = (mode) => {
+    window.localStorage.setItem("theme", mode);
+    setTheme(mode);
   };
+
+  //switch between themes
+  const toggleTheme = () => {
+    theme === "light" ? setMode("dark") : setMode("light");
+  };
+
+  //store local mode preference
+  React.useEffect(() => {
+    const localTheme = window.localStorage.getItem("theme");
+    localTheme && setTheme(localTheme);
+  }, []);
+
   return (
     //return the layout based on the current theme
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
